@@ -7,6 +7,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun Pagetwo(modifier: Modifier = Modifier) {
-    Text(text = "2nd page", fontSize = 50.sp)
+    Text(text = "2nd page is me ", fontSize = 50.sp)
     
 }
