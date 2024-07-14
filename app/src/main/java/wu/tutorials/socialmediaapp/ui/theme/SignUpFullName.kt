@@ -1,4 +1,4 @@
-package wu.tutorials.socialmediaapp
+package wu.tutorials.socialmediaapp.ui.theme
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,20 +15,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun UsernameInputBox() {
-    val testState = remember { mutableStateOf(" ") }
+fun SignUpFullName() {
+    val testState3 = remember { mutableStateOf(" ") }
 
-    Column(modifier = Modifier.padding(top = 320.dp), verticalArrangement = Arrangement.Top, horizontalAlignment = Alignment.Start) {
-        Text(text = "          User Name", fontSize = 16.sp)
+    Column(modifier = Modifier.padding(top = 32.dp), verticalArrangement = Arrangement.Top, horizontalAlignment = Alignment.Start) {
+        Text(text = "          Full Name *", fontSize = 16.sp)
 
     }
     Column(modifier = Modifier
         .fillMaxWidth()
-        .padding(top = 350.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-        TextField(value = testState.value, onValueChange = {testState.value = it}, placeholder = { Text(
-            text = "your_name123"
-        )})
+        .padding(top = 15.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+        TextField(value = testState3.value, onValueChange = {testState3.value = it}, placeholder = { Text(
+            text = "Name Surname"
+        )
+        })
     }
 }
-
-
