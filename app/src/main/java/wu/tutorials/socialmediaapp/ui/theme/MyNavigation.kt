@@ -13,7 +13,7 @@ fun MyNavigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Home.route ) {
         composable(Home.route) {
-            LoginButton(navController)
+            LoginButton(navController = navController)
         }
         composable(Pagetwo.route) {
             Pagetwo()

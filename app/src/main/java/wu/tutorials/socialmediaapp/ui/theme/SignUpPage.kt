@@ -16,6 +16,7 @@ fun SignUpPage() {
         .fillMaxHeight()
         .verticalScroll(scrollState)
         .padding(top = 250.dp)){
+        MainBaground()
         SignUpTop()
         SignUpFullName()
         SignUpusername()
@@ -23,5 +24,7 @@ fun SignUpPage() {
         SignUpPassword()
         SignUpRepeatpassword()
         AcceptSignUpTandC()
+        SignUpButton()
+        SignUpNavigation()
     }
 }

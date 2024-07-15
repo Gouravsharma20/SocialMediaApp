@@ -17,15 +17,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import wu.tutorials.socialmediaapp.ui.theme.LogInTop
-import wu.tutorials.socialmediaapp.ui.theme.Signup
 
 @Composable
 fun LoginButton(navController: NavController) {
-    LogInTop()
-    UsernameInputBox()
-    PasswardInputBox()
-    Signup()
     Row (modifier = Modifier
         .fillMaxWidth()
         .padding(top = 625.dp), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically){
